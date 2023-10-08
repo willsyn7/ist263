@@ -1,0 +1,12 @@
+body{ 
+    background-color: aqua;
+    font-family: "Times New roman", Times, serif;
+}
+table {tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }}
+
+  h1 {
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+  }
