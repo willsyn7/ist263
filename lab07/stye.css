@@ -11,5 +11,13 @@ nav a:hover{background-color: #0802A3;}
 
 nav {padding: 10px;
 margin-bottom: 30px;}
-
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFE4E1;
+    color: black;
+    text-align: center;
+  }
 
