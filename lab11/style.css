@@ -7,7 +7,7 @@ max-height: 300px;}
 
 span.navigation2 {
     color: #64CCC5;
-    background-color: #FF4B91;
+    background-color: #ffa101;
 
 }
 
@@ -22,7 +22,7 @@ span.navigation2 {
     @media only screen and (max-width: 767px) { span {display: none;}
         }    
 nav a{color: #64CCC5;
-    background-color: #FF4B91;}
+    background-color: #ffa101;}
 nav a:hover{background-color: #0802A3;}
 
 .navigation
@@ -39,3 +39,12 @@ margin-bottom: 30px;}
     text-align: center;
   }
   
+  .skip { 
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+    text-decoration: none;
+    position:  absolute; /* posisitions an element relative to the top left corner of the screen */
+    top: 10px;
+    left: -999px; /* push of the left side */
+}
