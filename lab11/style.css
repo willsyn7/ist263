@@ -14,7 +14,7 @@ span.navigation2 {
 .opener{text-align: center;}
 .flex1{display: flex; justify-content: left;align-items: center; gap: 200px;}
 
-.flex2{background-color: #8458B3; width: fit-content; border-radius: 10px;align-items: right; float: right;}
+.flex2{background-color: #272727; width: fit-content; border-radius: 10px;align-items: right; float: right; border-style: solid;}
 
 @media only screen and (min-width: 768px) {nav.navb
      {display:none;} }
