@@ -50,4 +50,9 @@ margin-bottom: 30px;}
 }
 
 h4 { font-size: xx-large; color: #ff652f;}
-div.contact{color: #ffe400 ;}
+a:link {
+    color:#ffe400;
+}
+a:visited {
+    color: #14a76c;
+}
