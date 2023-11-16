@@ -14,17 +14,22 @@
     </style>
     <script>
         function WinnerMessage(){
-        alert ('You Won!');
-        }
+        document.getElementById("messages").innerHTML = 'You Won!';
+    }
         function Tryagain(){
-            alert('Wrong Shell- Try again');
+            document.getElementById("messsages").innerHTML ='Wrong Shell- Try again';
+        }
+        function ShuffleShells(){
+            document.getElementById("first").style.order = Math.floor((Math.random()*3)+2);
         }
     </script>
 </head>
-<body>
+<body onload="ShuffleShells();">
+    <div class="container">
     <h1> Chose a Walnut</h1>
-    <img src="../img/1000_F_169567644_P6QGPglv5LF5GPVQKbGavyKtnbHw07YG.jpg" onclick="WinnerMessage();">
+    <img src="../img/1000_F_169567644_P6QGPglv5LF5GPVQKbGavyKtnbHw07YG.jpg" id= "first" alt= "first Walnut" onclick="WinnerMessage();">
     <img src="../img/1000_F_169567644_P6QGPglv5LF5GPVQKbGavyKtnbHw07YG.jpg" id = "second" alt="second Walnut" onclick="Tryagain();">
     <img src="../img/1000_F_169567644_P6QGPglv5LF5GPVQKbGavyKtnbHw07YG.jpg" id = "third" alt ="third Walnut" onclick="Tryagain();">
-</body>
+</div>
+<div id="messages"></div>
 </html>
