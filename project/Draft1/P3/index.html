@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: #beef00;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  font-size: 10px;
+}
+.item1{
+    justify-content: space-between;
+    display: flex;
+}
+.button{
+    position: relative;
+    bottom: 60px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button > button{
+    top: 15px;
+    margin: 6px;
+} 
+.title >h1{
+    font-size: 30px;
+    text-align: left;
+}
+.imge{
+    position: relative;
+    right: 120px;
+    height: 100px;
+    width: 100px;
+}
+
+.fourbtns button {
+    border: 2px solid #000000; /* Black border color */
+    border-radius: 10px; /* 10px border radius */
+    width: 150px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    font-size: 16px; /* Font size of the text inside the button */
+    padding: 10px; /* Padding inside the button */
+    
+}
+
+
+.item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sevenbtn {
+    width: 100px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    font-size: 12px; /* Font size of the text inside the button */
+    padding: 8px; /* Padding inside the button */
+}
+
+.main-img{
+    padding: 20px;
+    height: 200px;
+    width: 200px; 
+}
+.main-imgs{
+    padding: 20px;
+    height: 400px;
+    width: 400px; 
+}
+.img-class >p{
+    border: 2px solid black;
+}
+.item-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.paragraph{
+    border: 2px solid black;
+    background-color: #657a00;
+}
+.para{
+    border: 2px solid black;
+}
+.para-1{
+    border-top: 2px solid black;
+}
+p{
+    font-size: 20px;
+}
+.images{
+    height: 200px;
+    width: 200px;   
+}
+.item5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    border: 2px solid black
+    
+}
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+#center{
+   display: inline;
+   justify-content: center;
+}
+#center >p{
+    margin-right: 400px;
+    left: 300px;
+}
+
+.item-4 {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.item-4 > p, .item-4 > div {
+    flex: 1; /* Assigns equal space to the paragraph and the image */
+}
+
+.main-imgs {
+    width: 90%; /* Adjust the image width as needed */
+    height: 400px; /* Keep the aspect ratio of the image */
+}
+
+.item-4 > p {
+    margin-right: 200px; /* Adds space between the paragraph and the image */
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="title">
+        <h1>Title</h1>
+    </div>
+
+  </div>
+  <div class="item2">
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+  </div>
+  <div class="item3">
+    <div class="item-3">
+      <div>
+        <div class="fourbtns">
+            <button >Button</button>
+            <button>Button</button>
+            <button>Button</button>
+            <button>Button</button>
+        </div>
+        <div class="img-class">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id aut voluptates qui inventore repudiandae, dolores nemo odit voluptatum voluptas modi perspiciatis quos totam doloribus mollitia consequuntur! Repudiandae adipisci omnis veniam vero maiores accusantium eaque exercitationem aspernatur, reiciendis libero aliquid esse fugit, accusamus quas id quo temporibus pariatur consequatur. Atque officiis nostrum eos. Id nisi est ab harum, vero amet ut hic dicta dolorem rerum provident, voluptates fugit fuga molestiae alias fugiat dolorum cumque a! Dolorem, laudantium odio hic vitae ipsam repudiandae. Corrupti fugit expedita animi similique quae eaque aut repudiandae dolores, porro amet nesciunt debitis enim ipsam ut nisi minus.</p>
+            <div class="pictures">
+                <img class="main-img" src="1.jpg" alt="" srcset="">
+                <img class="main-img" src="2.jpg" alt="" srcset="">
+                <img class="main-img" src="3.jpg" alt="" srcset="">
+            </div>
+            <div class="pictures">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero consequuntur nam labore. Magni architecto perferendis commodi aliquam natus sint.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero consequuntur nam labore. Magni architecto perferendis commodi aliquam natus sint.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero consequuntur nam labore. Magni architecto perferendis commodi aliquam natus sint.</p>
+            </div>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit iure amet, at consectetur sint saepe recusandae molestias 
+            repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. 
+            Sint, nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit iure amet, at consectetur sint saepe recusandae molestias 
+            repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. 
+            Sint, nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit iure amet, at consectetur sint saepe recusandae molestias 
+            repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam? 
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum </p>
+        <br>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum </p>
+    </div>
+    </div>
+  
+    <div class="item-4">
+        <div>
+            <img class="main-imgs" src="5.jpg" alt="" srcset="">
+        </div>
+        <p class="picp" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero hic quod totam explicabo et! 
+            Numquam ullam sint doloremque hic atque eligendi animi, commodi laborum fuga architecto ratione 
+            facere soluta consectetur accusamus! Corrupti in nostrum commodi pariatur minus doloremque 
+            voluptates nam soluta excepturi! Reiciendis error corporis in deleniti ab necessitatibus 
+            asperiores, fugiat ipsa incidunt dolores, praesentium, eius dolor. Totam, impedit aspernatur 
+            rerum id autem excepturi! Repudiandae molestiae ut fuga veniam ab reprehenderit est laudantium 
+            nostrum vero sint nemo eaque tenetur, iste minima, odit architecto quibusdam sunt. Asperiores 
+            ullam, unde minus accusamus nesciunt voluptates, vero maiores aliquid at rerum harum saepe 
+            obcaecati? Illo aliquam cupiditate amet asperiores commodi consequatur debitis tempore, magnam 
+            beatae cum distinctio modi voluptatibus dolorum possimus quasi, ad vero aut incidunt ab aspernatur 
+            quibusdam provident laborum. Corporis quam ab nemo repudiandae omnis soluta perspiciatis 
+            consequuntur nihil, ducimus nam dolor inventore eius eligendi. Exercitationem mollitia et 
+            sint repellendus, quo ullam alias esse autem voluptate neque fugiat corporis, voluptates 
+            iure porro id dolorum. Molestias fugit, rerum eum eaque dolorum minus facere expedita atque, 
+            dolorem dicta corrupti deleniti qui ut veritatis officia. Laborum impedit optio debitis iusto 
+            obcaecati sunt laudantium sed fugit aperiam.</p>        
+        </div>   
+  <div class="item5">
+    <div>
+
+        <img class="images" src="4.png" alt="" srcset="">
+    </div>
+    <div id="center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto 
+            ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? 
+            Nihil, minima itaque?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ut, necessitatibus ducimus nulla sequi quae quia. Vel eaque dolores reiciendis ut placeat tempore saepe tenetur deserunt cumque velit tempora quasi culpa, totam voluptas beatae iste nemo pariatur repellendus sint rerum quo? Numquam necessitatibus dicta provident optio. Optio neque maiores totam.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+

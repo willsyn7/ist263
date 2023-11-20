@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: #beef00;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  font-size: 10px;
+}
+.item1{
+    justify-content: space-between;
+    display: flex;
+
+}
+.button{
+    position: relative;
+    bottom: 60px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button > button{
+    top: 15px;
+    margin: 6px;
+} 
+.title >h1{
+    font-size: 30px;
+    text-align: left;
+}
+.imge{
+    position: relative;
+    right: 120px;
+    height: 100px;
+    width: 100px;
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sevenbtn {
+    width: 100px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    font-size: 12px; /* Font size of the text inside the button */
+    padding: 8px; /* Padding inside the button */
+}
+.main-img{
+    padding: 20px;
+    height: 400px;
+    width: 400px; 
+}
+.img-class >p{
+    border: 2px solid black;
+}
+.item-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.paragraph{
+    border: 2px solid black;
+}
+.para{
+    border: 2px solid black;
+}
+.para-1{
+    border-top: 2px solid black;
+}
+p{
+    font-size: 20px;
+}
+.images{
+    height: 400px;
+    width: 400px;   
+}
+.item5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    border: 2px solid black
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="title">
+        <h1>Title</h1>
+    </div>
+    <div class="Menu-class">
+        <img class="imge" src="1.jpg" alt="" srcset="">
+        <div class="button">
+            <button>Button</button>
+            <button>Button</button>
+        </div>
+    </div>
+
+  </div>
+  <div class="item2">
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+    <button class="sevenbtn">Button</button>
+  </div>
+  <div class="item3">
+    <div class="item-3">
+      <div>
+        <div >
+            <button >Button</button>
+            <button>Button</button>
+            <button>Button</button>
+            <button>Button</button>
+        </div>
+        <div class="img-class">
+            <img class="main-img" src="2.png" alt="" srcset="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam animi, quae esse perferendis dolor voluptatibus voluptates fuga.</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam?</p>
+    </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+    </div>
+    <div class="item-4">
+        <div>
+            <img class="main-img" src="3.jpg" alt="" srcset="">
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat facilis voluptatum doloribus. Maxime blanditiis rem vitae. Similique, placeat excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat facilis voluptatum doloribus. Maxime blanditiis rem vitae. Similique, placeat excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat facilis voluptatum doloribus. Maxime blanditiis rem vitae. Similique, placeat excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat facilis voluptatum doloribus. Maxime blanditiis rem vitae. Similique, placeat excepturi.</p>
+        </div>
+    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure amet, at consectetur sint saepe recusandae molestias repellendus nesciunt ipsa illum sunt nemo sapiente sequi a dolores eius. Sint, nam?</p>
+       
+   
+  <div class="item5">
+    <div>
+
+        <img class="images" src="4.jpg" alt="" srcset="">
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus temporibus odio architecto ipsam maiores, quae quo? Incidunt quidem itaque perferendis, ipsa odit maiores vitae hic officia? Nihil, minima itaque?</p>
+        
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
