@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <!--
+        1.large - no hamburger
+        2.small -show hamburger
+        3.large - no X
+        4.small - show X
+        5.large - links side by side 
+        6. small- links stacked
+
+        Javascirpt 
+        8. Click on Hambruger show links
+        0. Click on X hide link
+    -->
+    <style>
+        #hamicon {width: 40px;}
+        @media only screen and (min-width:800px){}
+        #hamicon, #close {display: none;}
+        @media only screen and (max-width:799px){
+            a {display: block;}
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src=" http://laferger.github.io/ist263/images/hamburger.png"
+        alt="hamburger">
+        <p id="close>">X</p>
+    </div>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
