@@ -1,0 +1,385 @@
+/*overall grid styling*/
+.grid-container {
+   display: grid;
+   grid-template-areas:
+     'menu header header header header header'
+     'menu main main main main main'
+     'footer footer footer footer footer footer';
+   gap: 5px;
+   background-color: #beef00;
+   padding: 5px;
+ }
+ 
+ .grid-container > div {
+   background-color: rgba(255, 255, 255, 0.8);
+   /* text-align: center; */
+   /* padding: 20px 0; */
+   font-size: 10px;
+ }
+ /* end of styling for the general grid*/
+
+/*start of styling for the header area*/
+.item1 {
+   grid-area: header;
+   justify-content: space-between;
+   display: flex;
+}
+
+@media screen and (max-width: 800px) {
+   .item1{
+      flex-direction: column;
+   }
+}
+
+.Menu-class{
+   grid-area: header;
+   justify-content: space-between;
+   display: flex;
+}
+
+.title{
+   background-color: #9cc207;
+   width: 100%;
+}
+
+.title >h1{
+   font-size: 30px;
+   text-align: left;
+   padding: 10px;
+}
+
+.sevenbtn {
+   width: 100px; /* Width of the button */
+   min-height: 30px; /* Height of the button */
+   font-size: 12px; /* Font size of the text inside the button */
+   padding: 8px; /* Padding inside the button */
+   border-radius: 0px;
+   border: 1px solid gray;
+}
+/* end of styling for the menu grid area*/
+
+/* end of styling for the header area*/
+
+/* start of styling for the menu grid area*/
+.item2 {
+   grid-area: menu; 
+   row-gap: 10px;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   border: 1px solid black;
+}
+
+.item22 {
+   width: 100px; /* Width of the button */
+   height: 30px; /* Height of the button */
+   font-size: 12px; /* Font size of the text inside the button */
+   padding: 8px; /* Padding inside the button */
+   border-radius: 0px;
+   border: 1px solid gray;
+}
+/* end of styling for the menu grid area*/
+
+#myModal{
+   display: none;
+ }
+
+button{
+   cursor: pointer;
+   outline: none;
+   border: 1px solid gray;
+
+ }
+
+.item3 {
+    grid-area: main;
+}
+
+#tp_button_2 button{
+   border-radius: 0px;
+   border: 1px solid gray;
+   padding: 10px;
+   margin-right: -4px;
+}
+
+#tp_button_2 :first-child{
+   border-radius: 8px 0px 0px 8px;
+}
+
+#tp_button_2 :last-child{
+   border-radius: 0px 8px 8px 0px;
+}
+
+#par_bl_btn{
+   padding: 5px;
+   width: 55vw;
+}
+
+.paragraph{
+   border: 1px solid black;
+   width: 30vw;
+}
+
+.paragraph p{
+   margin: 5px 1px;
+}
+p{
+   font-size: 20px;
+   padding: 2px 2px
+}
+
+.paragraph :first-child{
+   border-bottom: 1px solid black;
+   padding-bottom: 50px;
+}
+
+hr{
+   border-style: solid;
+   border-width: 1px; 
+   margin: 10px;
+   border-color: rgba(0,0,255,0.10);
+}
+
+.item5 {
+   grid-area: footer;
+}
+
+.button{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.button > button{
+   top: 1vh;
+   width: 10vw;
+   height: 5vh;
+   margin: 10px;
+}
+
+.title >h1{
+   font-size: 30px;
+   text-align: left;
+}
+.imge{
+   position: relative;
+   height: 20vh;
+   width: 10vw;
+}
+
+.img-class{
+   font-size: 15px;
+}
+
+.image-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 100px; /* Adjust the space between images */
+}
+
+.main-img, .secondary-img {
+   padding: 20px;
+   width: 100%; /* Sets the width of both images to be equal */
+   max-width: 400px; /* Adjust maximum width as needed */
+   height: auto; /* Maintains aspect ratio */
+}
+
+.space-between{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.space-between img{
+   width: 100%;
+}
+
+
+.item-3{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.item-4{
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+}
+
+
+.para-1{
+   border-top: 2px solid black;
+}
+
+.image-container img{
+   height: 400px;
+   width: 400px;   
+}
+.item5 { 
+   grid-area: footer;
+   display: flex;
+   margin-left: -11vw;
+   z-index: 10;
+   position: absolute;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   overflow: hidden;
+} 
+
+.item5 img{
+   width: 200px;
+   height: 180px;
+   margin: 1vh 10vw 0 0;
+}
+
+.item5 p{
+   width: 50vw;
+}
+
+.item5 .lastp{
+   margin-top: 20px;
+}
+
+p{
+   font-size: 15px;
+}
+
+label{
+   font-size: 12px;
+}
+/* The Modal (background) */
+.modal_ {
+   position: fixed; /* Stay in place */
+   z-index: 100; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content_ {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+ }
+ 
+ /* The Close Button */
+ .close_ {
+   color: #ffffff;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close_:hover,
+ .close_:focus {
+   color: red;
+   text-decoration: none;
+   cursor: pointer;
+ } 
+
+  /* Modal Header */
+.modal-header_ {
+   padding: 2px 16px;
+   background-color: #5cb85c;
+   color: white;
+ }
+ 
+ /* Modal Body */
+ .modal-body_ {padding: 2px 16px;}
+ 
+ /* Modal Content */
+ .modal-content_ {
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   animation-name: animatetop;
+   animation-duration: 0.4s
+ }
+ 
+ /* Add Animation */
+ @keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+ } 
+
+  /* The Modal (background) for game*/
+  .modalGame_ {
+   position: fixed; /* Stay in place */
+   z-index: 100; /* Sit on top */
+   left: 0;
+   top: 0;
+   display: none;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content/Box */
+ .modal-contentGame_ {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+ }
+ 
+ /* The Close Button */
+ .closeGame_ {
+   color: #ffffff;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .closeGame_:hover,
+ .closeGame_:focus {
+   color: red;
+   text-decoration: none;
+   cursor: pointer;
+ } 
+
+  /* Modal Header */
+.modal-headerGame_ {
+   padding: 2px 16px;
+   background-color: #5cb85c;
+   color: white;
+ }
+ 
+ /* Modal Body */
+ .modal-bodyGame_ {padding: 2px 16px;}
+ 
+ /* Modal Content */
+ .modal-contentGame_ {
+   position: relative;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   animation-name: animatetop;
+   animation-duration: 0.4s
+ }
+ 
+ /* Add Animation */
+ @keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+ } 
+
+ html, body {
+   font-family: 'Roboto', sans-serif;
+   background: #f7f7f7;
+}
